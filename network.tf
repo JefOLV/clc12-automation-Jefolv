@@ -91,8 +91,7 @@ resource "aws_route_table_association" "private_rt_associate" {
   subnet_id      = aws_subnet.private_subnet.id
   route_table_id = aws_route_table.private_rt.id
 }
-
-###Criando instância EC2
+### Criando Instancia EC2
 
 module "app_sg" {
   source = "terraform-aws-modules/security-group/aws"
